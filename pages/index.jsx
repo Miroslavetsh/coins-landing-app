@@ -2,7 +2,7 @@
 import Head from 'next/head'
 // custom elements
 import Header from './components/Header/Header'
-import Wrapper from './components/Wrapper/Wrapper'
+import MainBanner from './components/MainBanner/MainBanner'
 // styles
 import styles from '../styles/Home.module.scss'
 
@@ -15,7 +15,7 @@ export default function Home() {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             <Header />
-            <Wrapper>dkkdjtadghj dkjadjsd</Wrapper>
+            <MainBanner />
             {/* <Footer /> */}
         </div>
     )
