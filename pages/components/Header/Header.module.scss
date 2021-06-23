@@ -1,0 +1,16 @@
+.header {
+    padding: 28px 0;
+    background: #3664d8;
+    .logo {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header {
+        padding: 15px 0;
+    }
+    .logo {
+        margin-left: 30px;
+    }
+}
