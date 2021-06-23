@@ -15,7 +15,7 @@ const MainBanner = () => {
                 </div>
 
                 <div className={styles.bottom}>
-                    <Card layout='default' />
+                    <Card />
                     <CurrenciesContainer />
                 </div>
             </Wrapper>
