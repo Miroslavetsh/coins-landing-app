@@ -24,5 +24,51 @@
     .bottom {
         align-items: flex-end;
         display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1080px) {
+    .mainBanner {
+        .top {
+            align-items: start;
+            flex-direction: column;
+            .title {
+                margin-right: 0;
+                max-width: none;
+            }
+        }
+        .bottom {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .mainBanner {
+        .top {
+            .title {
+                font-size: 4.8em;
+                margin-bottom: 10px;
+            }
+            .subtitle {
+                font-size: 3em;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .mainBanner {
+        .top {
+            .title {
+                font-size: 2.8em;
+            }
+            .subtitle {
+                font-size: 2em;
+            }
+        }
     }
 }

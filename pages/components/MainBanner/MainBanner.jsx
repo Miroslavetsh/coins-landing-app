@@ -1,6 +1,7 @@
 // custom elements
 import Wrapper from '../Wrapper/Wrapper'
 import Card from '../Card/Card'
+import CurrenciesContainer from '../CurrenciesContainer/CurrenciesContainer'
 // styles
 import styles from './MainBanner.module.scss'
 
@@ -15,7 +16,7 @@ const MainBanner = () => {
 
                 <div className={styles.bottom}>
                     <Card layout='default' />
-                    {/* <CurrenciesContainer /> */}
+                    <CurrenciesContainer />
                 </div>
             </Wrapper>
         </div>
