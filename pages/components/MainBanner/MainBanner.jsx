@@ -1,11 +1,12 @@
 // custom elements
 import Wrapper from '../Wrapper/Wrapper'
+// import Card from '../Card/Card'
 // styles
 import styles from './MainBanner.module.scss'
 
 const MainBanner = () => {
     return (
-        <header className={styles.mainBanner}>
+        <section className={styles.mainBanner}>
             <Wrapper>
                 <div className={styles.top}>
                     <h1 className={styles.title}>Do The Task And Have Fun</h1>
@@ -17,7 +18,7 @@ const MainBanner = () => {
                     {/* <CurrenciesContainer /> */}
                 </div>
             </Wrapper>
-        </header>
+        </section>
     )
 }
 

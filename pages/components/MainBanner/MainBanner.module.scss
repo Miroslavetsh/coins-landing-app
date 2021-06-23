@@ -1,0 +1,28 @@
+.mainBanner {
+    .top {
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .title {
+            align-items: center;
+            color: #212353;
+            display: flex;
+            font-weight: bold;
+            font-size: 6em;
+            line-height: 1.1;
+            margin: 0 64px 40px 0;
+            max-width: 460px;
+        }
+        .subtitle {
+            color: #212353;
+            font-weight: 300;
+            font-size: 3.6em;
+            line-height: 1.1;
+        }
+    }
+    .bottom {
+        align-items: flex-end;
+        display: flex;
+    }
+}
