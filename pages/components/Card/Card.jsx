@@ -10,7 +10,13 @@ const Card = ({ layout = 'default' }) => {
         return (
             <div className={styles.card}>
                 <div className={styles.top}>
-                    <Image className={styles.avatar} width={115} height={115} src={Andy} />
+                    <Image
+                        className={styles.avatar}
+                        width={115}
+                        height={115}
+                        src={Andy}
+                        alt='Andy'
+                    />
                     <div className={styles.headline}>
                         <div className={styles.name}>Andy</div>
                         <div className={styles.position}>Head Of UX Design</div>
