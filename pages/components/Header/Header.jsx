@@ -1,7 +1,11 @@
+// next elements
 import Image from 'next/image'
-import styles from './Header.module.scss'
-import Logo from '../../../public/logo.svg'
+// custom elements
 import Wrapper from '../Wrapper/Wrapper'
+// images
+import Logo from '../../../public/logo.svg'
+// styles
+import styles from './Header.module.scss'
 
 const Header = () => {
     return (
