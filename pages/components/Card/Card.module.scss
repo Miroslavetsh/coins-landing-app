@@ -1,0 +1,55 @@
+.card {
+    animation: floating 1.5s ease-in-out infinite alternate;
+    background: #fff;
+    border-radius: 36px;
+    box-shadow: 0px 2.84946px 28.4946px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 28px 44px 40px 36px;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+
+    .top {
+        align-items: center;
+        display: flex;
+        margin-bottom: 4px;
+        .avatar {
+            border-radius: 50%;
+        }
+        .headline {
+            margin-left: 28px;
+            color: #212353;
+            font-size: 20px;
+            line-height: 1.25;
+            .name {
+                font-weight: 600;
+            }
+            .position {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .quotation {
+        max-width: 310px;
+        margin-left: 92px;
+        text-align: center;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.4;
+        color: #212353;
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translateY(-4px);
+    }
+}
