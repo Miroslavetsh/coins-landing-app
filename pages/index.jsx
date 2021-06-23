@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss'
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <div className={styles.page}>
             <Head>
                 <title>Test Task</title>
                 <meta name='description' content='Test task for Andy' />

@@ -1,3 +1,4 @@
+import Header from '../Header/Header'
 import styles from './Wrapper.module.scss'
 
 const Wrapper = ({ children }) => {
