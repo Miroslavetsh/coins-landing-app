@@ -8,7 +8,7 @@ import styles from './CodersComment.module.scss'
 
 const CodersComment = ({ coder }) => {
     const MAX_RATING_POINT = 5
-    const { src, height, width } = coder?.img
+    const { src, height, width } = coder.img
 
     function createStarsRating(point, max) {
         const stars = new Array(max)
@@ -24,21 +24,21 @@ const CodersComment = ({ coder }) => {
     }
 
     return (
-        <div className={styles.card} title={`Rating: ${coder?.rating} of ${MAX_RATING_POINT}`}>
+        <div className={styles.card} title={`Rating: ${coder.rating} of ${MAX_RATING_POINT}`}>
             <div className={styles.coder}>
                 <div className={styles.image}>
                     <Image src={src} width={width} height={height} />
                 </div>
                 <div className={styles.text}>
-                    <div className={styles.description}>{coder?.description}</div>
-                    <div className={styles.name}>{coder?.name}</div>
+                    <div className={styles.description}>{coder.description}</div>
+                    <div className={styles.name}>{coder.name}</div>
                 </div>
             </div>
 
             <div className={styles.info}>
-                <div className={styles.time}>{coder?.time}</div>
+                <div className={styles.time}>{coder.time}</div>
                 <div className={styles.rating}>
-                    {createStarsRating(coder?.rating, MAX_RATING_POINT)}
+                    {createStarsRating(coder.rating, MAX_RATING_POINT)}
                 </div>
             </div>
         </div>
