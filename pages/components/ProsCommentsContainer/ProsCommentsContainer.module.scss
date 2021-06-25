@@ -1,0 +1,28 @@
+.container {
+    margin-bottom: 92px;
+    .title {
+        color: #212353;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: 0.58px;
+        margin-bottom: 55px;
+        text-align: center;
+    }
+    .inner {
+        max-width: 810px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 28px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        margin-bottom: 50px;
+        .inner {
+            flex-direction: column;
+        }
+    }
+}
