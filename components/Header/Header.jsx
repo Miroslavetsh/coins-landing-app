@@ -3,7 +3,7 @@ import Image from 'next/image'
 // custom elements
 import Wrapper from '../Wrapper/Wrapper'
 // images
-import Logo from '../../../public/logo.svg'
+import Logo from '../../public/logo.svg'
 // styles
 import styles from './Header.module.scss'
 

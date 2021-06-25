@@ -2,9 +2,9 @@
 import Wrapper from '../Wrapper/Wrapper'
 import ProsComment from '../ProsComment/ProsComment'
 // images
-import Nia from '../../../public/img/team/Nia.jpg'
-import Abigale from '../../../public/img/team/Abigale.jpg'
-import Fedya from '../../../public/img/team/Fedya.jpg'
+import Nia from '../../public/img/team/Nia.jpg'
+import Abigale from '../../public/img/team/Abigale.jpg'
+import Fedya from '../../public/img/team/Fedya.jpg'
 // styles
 import styles from './ProsCommentsContainer.module.scss'
 

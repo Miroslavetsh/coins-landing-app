@@ -2,8 +2,8 @@
 import Wrapper from '../Wrapper/Wrapper'
 import CodersComment from '../CodersComment/CodersComment'
 // images
-import John from '../../../public/img/coders/John.png'
-import Vasiliy from '../../../public/img/coders/Vasiliy.png'
+import John from '../../public/img/coders/John.png'
+import Vasiliy from '../../public/img/coders/Vasiliy.png'
 // styles
 import styles from './CodersCommentsContainer.module.scss'
 

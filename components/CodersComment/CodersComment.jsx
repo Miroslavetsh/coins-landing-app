@@ -1,8 +1,8 @@
 // next elements
 import Image from 'next/image'
 // images
-import GoldenStar from '../../../public/img/icons/star-gld.svg'
-import SilverStar from '../../../public/img/icons/star-slv.svg'
+import GoldenStar from '../../public/img/icons/star-gld.svg'
+import SilverStar from '../../public/img/icons/star-slv.svg'
 // styles
 import styles from './CodersComment.module.scss'
 

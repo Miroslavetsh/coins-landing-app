@@ -1,7 +1,7 @@
 // next elements
 import Image from 'next/image'
 // images
-import Andy from '../../../public/img/team/andy.jpg'
+import Andy from '../../public/img/team/andy.jpg'
 // styles
 import styles from './Card.module.scss'
 
