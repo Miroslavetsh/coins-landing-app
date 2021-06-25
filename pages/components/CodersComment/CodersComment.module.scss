@@ -1,0 +1,108 @@
+.card {
+    align-items: center;
+    background: #3664d8;
+    border-radius: 75px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 26px 15px 15px;
+    .coder {
+        color: #fff;
+        align-items: center;
+        display: flex;
+        margin-right: 10px;
+        .image {
+            margin-right: 15px;
+        }
+        .description {
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            margin-bottom: 5px;
+        }
+        .name {
+            color: #fff;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.25px;
+            opacity: 0.5;
+        }
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .time {
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            margin-bottom: 12px;
+            opacity: 0.5;
+        }
+        .rating {
+            div:nth-child(1) {
+                animation: starsJumping 2s ease-in-out infinite alternate;
+            }
+            div:nth-child(2) {
+                animation: starsJumping 3s ease-in-out infinite alternate;
+            }
+            div:nth-child(3) {
+                animation: starsJumping 7s ease-in-out infinite alternate;
+            }
+            div:nth-child(4) {
+                animation: starsJumping 6s ease-in-out infinite alternate;
+            }
+            div:nth-child(5) {
+                animation: starsJumping 3s ease-in-out infinite alternate;
+            }
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .card {
+        border-radius: 28px;
+        flex-direction: column;
+        align-items: flex-start;
+        .coder {
+            margin-bottom: 15px;
+            .text {
+                min-width: 200px;
+            }
+        }
+        .info {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            .time {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .card {
+        .coder {
+            flex-direction: column;
+            .image {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@keyframes starsJumping {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

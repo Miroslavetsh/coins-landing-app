@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Header from './components/Header/Header'
 import MainBanner from './components/MainBanner/MainBanner'
 import ProsCommentsContainer from './components/ProsCommentsContainer/ProsCommentsContainer'
+import CodersCommentsContainer from './components/CodersCommentsContainer/CodersCommentsContainer'
 // styles
 import styles from '../styles/Home.module.scss'
 
@@ -18,6 +19,7 @@ export default function Home() {
             <Header />
             <MainBanner />
             <ProsCommentsContainer />
+            <CodersCommentsContainer />
             {/* <Footer /> */}
         </div>
     )
