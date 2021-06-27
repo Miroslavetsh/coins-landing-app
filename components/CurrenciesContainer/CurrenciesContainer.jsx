@@ -8,10 +8,35 @@ import styles from './CurrenciesContainer.module.scss'
 
 const CurrenciesContainer = () => {
     const [currencies, setCurrencies] = useState([])
+    const neededCurrencies = {
+        bitcoin: {
+            title: 'Responsive Design',
+            notification: 'You’ ll Learn A Lot From This Task',
+        },
+        ethereum: {
+            title: 'Mobile Friendly',
+            notification: 'Don’t Forget About Small Devices',
+        },
+    }
 
-    useEffect(() => {
-        axios.get('/api/cryptocurrency').then((res) => setCurrencies(res.data))
-    })
+    useEffect(async () => {
+        axios
+            .get(
+                'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false',
+            )
+            .then((res) => {
+                let currenciesInfo = {}
+                const currencies = res.data.filter((cur) =>
+                    Object.keys(neededCurrencies).includes(cur.id),
+                )
+
+                currencies.map((cur) => {
+                    currenciesInfo[cur.id] = { ...cur, ...neededCurrencies[cur.id] }
+                })
+
+                setCurrencies({ ...currenciesInfo })
+            })
+    }, [])
 
     return (
         <div className={styles.container}>
