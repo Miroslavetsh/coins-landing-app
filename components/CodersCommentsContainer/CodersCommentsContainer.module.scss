@@ -1,19 +1,19 @@
 .container {
-    margin-bottom: 44px;
-    .title {
-        color: #212353;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 48px;
-        letter-spacing: 0.58px;
-        margin-bottom: 53px;
-        text-align: center;
-    }
-    .inner {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        margin: 0 auto;
-        max-width: 660px;
-    }
+  margin-bottom: 44px;
+  .title {
+    color: #212353;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: 0.58px;
+    margin-bottom: 53px;
+    text-align: center;
+  }
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0 auto;
+    max-width: 660px;
+  }
 }
