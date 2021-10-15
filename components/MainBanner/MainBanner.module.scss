@@ -1,66 +1,66 @@
 .mainBanner {
-    margin-bottom: 112px;
-    .top {
-        align-items: flex-end;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
-        .title {
-            align-items: center;
-            color: #212353;
-            display: flex;
-            font-weight: bold;
-            font-size: 6em;
-            line-height: 1.1;
-            margin: 0 64px 40px 0;
-            max-width: 460px;
-        }
-        .subtitle {
-            color: #212353;
-            font-weight: 300;
-            font-size: 3.6em;
-            line-height: 1.1;
-        }
+  margin-bottom: 112px;
+  .top {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .title {
+      align-items: center;
+      color: #212353;
+      display: flex;
+      font-weight: bold;
+      font-size: 6em;
+      line-height: 1.1;
+      margin: 0 64px 40px 0;
+      max-width: 460px;
     }
-    .bottom {
-        align-items: flex-end;
-        display: flex;
-        justify-content: space-between;
+    .subtitle {
+      color: #212353;
+      font-weight: 300;
+      font-size: 3.6em;
+      line-height: 1.1;
     }
+  }
+  .bottom {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 1080px) {
-    .mainBanner {
-        .top {
-            align-items: start;
-            flex-direction: column;
-            .title {
-                margin-right: 0;
-                max-width: none;
-                font-size: 4.8em;
-                margin-bottom: 10px;
-            }
-            .subtitle {
-                font-size: 3em;
-                margin-bottom: 20px;
-            }
-        }
-        .bottom {
-            align-items: center;
-            flex-direction: column;
-        }
+  .mainBanner {
+    .top {
+      align-items: start;
+      flex-direction: column;
+      .title {
+        margin-right: 0;
+        max-width: none;
+        font-size: 4.8em;
+        margin-bottom: 10px;
+      }
+      .subtitle {
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
     }
+    .bottom {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
 }
 
 @media (max-width: 500px) {
-    .mainBanner {
-        .top {
-            .title {
-                font-size: 2.8em;
-            }
-            .subtitle {
-                font-size: 2em;
-            }
-        }
+  .mainBanner {
+    .top {
+      .title {
+        font-size: 2.8em;
+      }
+      .subtitle {
+        font-size: 2em;
+      }
     }
+  }
 }
