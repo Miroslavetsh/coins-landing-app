@@ -17,7 +17,7 @@ const Index: React.FC = (): JSX.Element => {
         <meta property='og:title' content="Miroslavetsh's coin app" />
         <meta
           property='og:description'
-          content='App, where you can track currencies with its own cources. Now availiable bitcoin and ethereum, but we have a big plans... :)'
+          content='App, where you can track currencies with its own cources. Now availiable bitcoin and ethereum, but we have big plans... :)'
         />
         <meta
           property='og:image'
